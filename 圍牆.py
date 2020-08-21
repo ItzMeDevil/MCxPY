@@ -11,5 +11,8 @@ mc = Minecraft.create()
 
 x,y,z=mc.player.getPos()
 
-mc.setBlocks(x,y,z,x+50,y+3,z+50,98)
-mc.setBlocks(x+1,y,z+1,x+49,y+3,z+49,0)
+l=int(input("請輸入長度: "))
+w=int(input("請輸入寬度: "))
+
+mc.setBlocks(x,y,z,x+l,y+3,z+w,98)
+mc.setBlocks(x+1,y,z+1,x+l-1,y+3,z+w-1,0)
